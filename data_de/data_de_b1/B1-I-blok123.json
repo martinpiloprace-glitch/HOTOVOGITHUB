@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-I-123",
+    "level": "B1",
+    "letter": "I",
+    "position": 123,
+    "data": {
+        "word": "Inspire",
+        "translation": "Inspirieren",
+        "example_en": "",
+        "example_de": ""
+    }
+}

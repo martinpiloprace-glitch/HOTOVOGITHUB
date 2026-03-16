@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-S-256",
+    "level": "A1",
+    "letter": "S",
+    "position": 256,
+    "data": {
+        "word": "State",
+        "translation": "Staat / Zustand",
+        "example_en": "",
+        "example_de": ""
+    }
+}

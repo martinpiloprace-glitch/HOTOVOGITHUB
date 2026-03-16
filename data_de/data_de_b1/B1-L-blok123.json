@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-L-123",
+    "level": "B1",
+    "letter": "L",
+    "position": 123,
+    "data": {
+        "word": "Lock",
+        "translation": "Schloss / Sperren",
+        "example_en": "",
+        "example_de": ""
+    }
+}

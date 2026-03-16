@@ -1,0 +1,12 @@
+{
+    "id": "PL-B1-T-30",
+    "level": "B1",
+    "letter": "T",
+    "position": 30,
+    "data": {
+        "word": "Temperature",
+        "translation": "Temperatura",
+        "example_en": "",
+        "example_de": ""
+    }
+}

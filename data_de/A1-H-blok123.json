@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-H-123",
+    "level": "A1",
+    "letter": "H",
+    "position": 123,
+    "data": {
+        "word": "Hurt",
+        "translation": "Verletzen",
+        "example_en": "",
+        "example_de": ""
+    }
+}

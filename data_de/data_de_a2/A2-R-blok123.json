@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-R-123",
+    "level": "A2",
+    "letter": "R",
+    "position": 123,
+    "data": {
+        "word": "Resident",
+        "translation": "Einwohner",
+        "example_en": "",
+        "example_de": ""
+    }
+}

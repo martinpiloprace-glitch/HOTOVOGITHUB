@@ -1,0 +1,12 @@
+{
+    "id": "PL-A1-T-16",
+    "level": "A1",
+    "letter": "T",
+    "position": 16,
+    "data": {
+        "word": "Test",
+        "translation": "Test",
+        "example_en": "",
+        "example_de": ""
+    }
+}

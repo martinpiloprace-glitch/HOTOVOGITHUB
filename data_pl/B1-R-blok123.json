@@ -1,0 +1,12 @@
+{
+    "id": "PL-B1-R-123",
+    "level": "B1",
+    "letter": "R",
+    "position": 123,
+    "data": {
+        "word": "Response",
+        "translation": "Odpowiedź / Reakcja",
+        "example_en": "",
+        "example_de": ""
+    }
+}

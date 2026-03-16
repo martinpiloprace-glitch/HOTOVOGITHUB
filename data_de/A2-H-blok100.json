@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-H-100",
+    "level": "A2",
+    "letter": "H",
+    "position": 100,
+    "data": {
+        "word": "Housing",
+        "translation": "Wohnraum",
+        "example_en": "",
+        "example_de": ""
+    }
+}

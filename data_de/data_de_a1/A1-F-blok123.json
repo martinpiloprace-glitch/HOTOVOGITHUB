@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-F-123",
+    "level": "A1",
+    "letter": "F",
+    "position": 123,
+    "data": {
+        "word": "Format",
+        "translation": "Format",
+        "example_en": "",
+        "example_de": ""
+    }
+}

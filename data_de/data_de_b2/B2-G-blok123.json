@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-G-123",
+    "level": "B2",
+    "letter": "G",
+    "position": 123,
+    "data": {
+        "word": "Guitar",
+        "translation": "Gitarre",
+        "example_en": "",
+        "example_de": ""
+    }
+}

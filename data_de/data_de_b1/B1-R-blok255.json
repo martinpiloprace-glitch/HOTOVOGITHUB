@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-R-255",
+    "level": "B1",
+    "letter": "R",
+    "position": 255,
+    "data": {
+        "word": "Route",
+        "translation": "Route",
+        "example_en": "",
+        "example_de": ""
+    }
+}

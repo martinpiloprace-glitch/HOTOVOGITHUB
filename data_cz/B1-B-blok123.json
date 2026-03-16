@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B1-B-123",
+    "level": "B1",
+    "letter": "B",
+    "position": 123,
+    "data": {
+        "word": "Branch",
+        "translation": "Větev / Pobočka",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B1-A-123",
+    "level": "B1",
+    "letter": "A",
+    "position": 123,
+    "data": {
+        "word": "And",
+        "translation": "A",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

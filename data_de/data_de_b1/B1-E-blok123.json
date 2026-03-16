@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-E-123",
+    "level": "B1",
+    "letter": "E",
+    "position": 123,
+    "data": {
+        "word": "Enquire",
+        "translation": "Anfragen",
+        "example_en": "",
+        "example_de": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-F-12",
+    "level": "B2",
+    "letter": "F",
+    "position": 12,
+    "data": {
+        "word": "False",
+        "translation": "Falsch",
+        "example_en": "",
+        "example_de": ""
+    }
+}

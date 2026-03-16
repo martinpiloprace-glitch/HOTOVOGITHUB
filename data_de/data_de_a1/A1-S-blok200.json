@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-S-200",
+    "level": "A1",
+    "letter": "S",
+    "position": 200,
+    "data": {
+        "word": "Something",
+        "translation": "Etwas",
+        "example_en": "",
+        "example_de": ""
+    }
+}

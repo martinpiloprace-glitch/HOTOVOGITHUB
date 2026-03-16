@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-W-125",
+    "level": "B1",
+    "letter": "W",
+    "position": 125,
+    "data": {
+        "word": "World",
+        "translation": "Welt",
+        "example_en": "",
+        "example_de": ""
+    }
+}

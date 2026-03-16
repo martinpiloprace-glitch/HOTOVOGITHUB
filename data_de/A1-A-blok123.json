@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-A-123",
+    "level": "A1",
+    "letter": "A",
+    "position": 123,
+    "data": {
+        "word": "Artist",
+        "translation": "Künstler",
+        "example_en": "",
+        "example_de": ""
+    }
+}

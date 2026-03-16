@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-M-113",
+    "level": "B1",
+    "letter": "M",
+    "position": 113,
+    "data": {
+        "word": "Message",
+        "translation": "Nachricht",
+        "example_en": "",
+        "example_de": ""
+    }
+}

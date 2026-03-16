@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B1-C-255",
+    "level": "B1",
+    "letter": "C",
+    "position": 255,
+    "data": {
+        "word": "Continent",
+        "translation": "Kontinent",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-F-100",
+    "level": "B2",
+    "letter": "F",
+    "position": 100,
+    "data": {
+        "word": "Food",
+        "translation": "Essen",
+        "example_en": "",
+        "example_de": ""
+    }
+}

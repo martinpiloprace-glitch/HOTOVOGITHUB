@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-F-117",
+    "level": "A2",
+    "letter": "F",
+    "position": 117,
+    "data": {
+        "word": "Forecast",
+        "translation": "Vorhersage",
+        "example_en": "",
+        "example_de": ""
+    }
+}

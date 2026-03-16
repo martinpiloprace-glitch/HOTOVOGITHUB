@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-R-123",
+    "level": "B1",
+    "letter": "R",
+    "position": 123,
+    "data": {
+        "word": "Remainder",
+        "translation": "Rest",
+        "example_en": "",
+        "example_de": ""
+    }
+}

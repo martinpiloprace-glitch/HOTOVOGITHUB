@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B2-O-123",
+    "level": "B2",
+    "letter": "O",
+    "position": 123,
+    "data": {
+        "word": "Overdue",
+        "translation": "Po termínu / Opožděný",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

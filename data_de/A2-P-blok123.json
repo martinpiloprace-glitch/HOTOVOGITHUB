@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-P-123",
+    "level": "A2",
+    "letter": "P",
+    "position": 123,
+    "data": {
+        "word": "Poem",
+        "translation": "Gedicht",
+        "example_en": "",
+        "example_de": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-T-100",
+    "level": "B1",
+    "letter": "T",
+    "position": 100,
+    "data": {
+        "word": "Thing",
+        "translation": "Ding",
+        "example_en": "",
+        "example_de": ""
+    }
+}

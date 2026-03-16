@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B2-L-123",
+    "level": "B2",
+    "letter": "L",
+    "position": 123,
+    "data": {
+        "word": "Lion",
+        "translation": "Lev",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

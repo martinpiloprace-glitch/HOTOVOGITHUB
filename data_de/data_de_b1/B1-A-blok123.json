@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-A-123",
+    "level": "B1",
+    "letter": "A",
+    "position": 123,
+    "data": {
+        "word": "Airline",
+        "translation": "Fluggesellschaft",
+        "example_en": "",
+        "example_de": ""
+    }
+}

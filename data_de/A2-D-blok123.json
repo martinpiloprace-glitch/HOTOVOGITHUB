@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-D-123",
+    "level": "A2",
+    "letter": "D",
+    "position": 123,
+    "data": {
+        "word": "Distance",
+        "translation": "Entfernung",
+        "example_en": "",
+        "example_de": ""
+    }
+}

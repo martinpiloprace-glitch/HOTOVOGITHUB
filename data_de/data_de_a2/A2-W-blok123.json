@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-W-123",
+    "level": "A2",
+    "letter": "W",
+    "position": 123,
+    "data": {
+        "word": "Writer",
+        "translation": "Schreiber / Autor",
+        "example_en": "",
+        "example_de": ""
+    }
+}

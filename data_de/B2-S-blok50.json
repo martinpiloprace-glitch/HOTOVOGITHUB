@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-S-50",
+    "level": "B2",
+    "letter": "S",
+    "position": 50,
+    "data": {
+        "word": "Score",
+        "translation": "Punktestand / Partitur",
+        "example_en": "",
+        "example_de": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-L-1",
+    "level": "B1",
+    "letter": "L",
+    "position": 1,
+    "data": {
+        "word": "Label",
+        "translation": "Etikett / Label",
+        "example_en": "",
+        "example_de": ""
+    }
+}

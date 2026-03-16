@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-E-100",
+    "level": "B1",
+    "letter": "E",
+    "position": 100,
+    "data": {
+        "word": "End",
+        "translation": "Ende / Beenden",
+        "example_en": "",
+        "example_de": ""
+    }
+}

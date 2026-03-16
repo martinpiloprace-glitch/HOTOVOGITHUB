@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-W-111",
+    "level": "A2",
+    "letter": "W",
+    "position": 111,
+    "data": {
+        "word": "World",
+        "translation": "Welt",
+        "example_en": "",
+        "example_de": ""
+    }
+}

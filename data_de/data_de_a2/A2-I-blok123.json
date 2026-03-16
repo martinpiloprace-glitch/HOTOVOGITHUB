@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-I-123",
+    "level": "A2",
+    "letter": "I",
+    "position": 123,
+    "data": {
+        "word": "Invite",
+        "translation": "Einladen",
+        "example_en": "",
+        "example_de": ""
+    }
+}

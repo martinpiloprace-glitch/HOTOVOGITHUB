@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-W-123",
+    "level": "B1",
+    "letter": "W",
+    "position": 123,
+    "data": {
+        "word": "Workplace",
+        "translation": "Arbeitsplatz",
+        "example_en": "",
+        "example_de": ""
+    }
+}

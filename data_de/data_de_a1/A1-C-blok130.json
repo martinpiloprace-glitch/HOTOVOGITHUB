@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-C-130",
+    "level": "A1",
+    "letter": "C",
+    "position": 130,
+    "data": {
+        "word": "Committee",
+        "translation": "Ausschuss",
+        "example_en": "",
+        "example_de": ""
+    }
+}

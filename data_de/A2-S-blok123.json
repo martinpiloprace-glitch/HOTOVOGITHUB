@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-S-123",
+    "level": "A2",
+    "letter": "S",
+    "position": 123,
+    "data": {
+        "word": "Shot",
+        "translation": "Schuss / Foto",
+        "example_en": "",
+        "example_de": ""
+    }
+}

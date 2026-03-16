@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-A-200",
+    "level": "B1",
+    "letter": "A",
+    "position": 200,
+    "data": {
+        "word": "Apartment",
+        "translation": "Wohnung",
+        "example_en": "",
+        "example_de": ""
+    }
+}

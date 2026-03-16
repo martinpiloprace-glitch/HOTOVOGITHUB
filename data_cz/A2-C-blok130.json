@@ -1,0 +1,12 @@
+{
+    "id": "CZ-A2-C-130",
+    "level": "A2",
+    "letter": "C",
+    "position": 130,
+    "data": {
+        "word": "Container",
+        "translation": "Kontejner",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

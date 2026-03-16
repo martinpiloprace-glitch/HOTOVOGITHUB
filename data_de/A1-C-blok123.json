@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-C-123",
+    "level": "A1",
+    "letter": "C",
+    "position": 123,
+    "data": {
+        "word": "Comfortable",
+        "translation": "Bequem",
+        "example_en": "",
+        "example_de": ""
+    }
+}

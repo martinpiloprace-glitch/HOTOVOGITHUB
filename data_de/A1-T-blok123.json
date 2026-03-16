@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-T-123",
+    "level": "A1",
+    "letter": "T",
+    "position": 123,
+    "data": {
+        "word": "Training",
+        "translation": "Training",
+        "example_en": "",
+        "example_de": ""
+    }
+}

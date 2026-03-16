@@ -1,0 +1,12 @@
+{
+    "id": "PL-B1-S-123",
+    "level": "B1",
+    "letter": "S",
+    "position": 123,
+    "data": {
+        "word": "Situation",
+        "translation": "Sytuacja",
+        "example_en": "",
+        "example_de": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-S-103",
+    "level": "B1",
+    "letter": "S",
+    "position": 103,
+    "data": {
+        "word": "Sentiment",
+        "translation": "Stimmung / Gefühl",
+        "example_en": "",
+        "example_de": ""
+    }
+}

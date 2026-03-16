@@ -1,0 +1,12 @@
+{
+    "id": "PL-B1-S-100",
+    "level": "B1",
+    "letter": "S",
+    "position": 100,
+    "data": {
+        "word": "Signature",
+        "translation": "Podpis",
+        "example_en": "",
+        "example_de": ""
+    }
+}

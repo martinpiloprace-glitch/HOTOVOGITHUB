@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-W-123",
+    "level": "B2",
+    "letter": "W",
+    "position": 123,
+    "data": {
+        "word": "Wonderful",
+        "translation": "Wunderbar",
+        "example_en": "",
+        "example_de": ""
+    }
+}

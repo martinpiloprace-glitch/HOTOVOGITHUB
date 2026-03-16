@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-G-123",
+    "level": "B1",
+    "letter": "G",
+    "position": 123,
+    "data": {
+        "word": "Guy",
+        "translation": "Typ",
+        "example_en": "",
+        "example_de": ""
+    }
+}

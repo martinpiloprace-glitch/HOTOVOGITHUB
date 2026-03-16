@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-X-1",
+    "level": "B1",
+    "letter": "X",
+    "position": 1,
+    "data": {
+        "word": "X-ray",
+        "translation": "Röntgenstrahl",
+        "example_en": "",
+        "example_de": ""
+    }
+}

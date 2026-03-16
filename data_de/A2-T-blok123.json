@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-T-123",
+    "level": "A2",
+    "letter": "T",
+    "position": 123,
+    "data": {
+        "word": "Top",
+        "translation": "Oben / Spitze",
+        "example_en": "",
+        "example_de": ""
+    }
+}

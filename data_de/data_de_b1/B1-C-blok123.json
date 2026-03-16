@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-C-123",
+    "level": "B1",
+    "letter": "C",
+    "position": 123,
+    "data": {
+        "word": "Chin",
+        "translation": "Kinn",
+        "example_en": "",
+        "example_de": ""
+    }
+}

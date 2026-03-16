@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-I-123",
+    "level": "A1",
+    "letter": "I",
+    "position": 123,
+    "data": {
+        "word": "Iron",
+        "translation": "Eisen / Bügeleisen",
+        "example_en": "",
+        "example_de": ""
+    }
+}

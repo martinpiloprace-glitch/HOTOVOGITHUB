@@ -1,0 +1,12 @@
+{
+    "id": "PL-A1-N-1",
+    "level": "A1",
+    "letter": "N",
+    "position": 1,
+    "data": {
+        "word": "Name",
+        "translation": "Imię / Nazwisko",
+        "example_en": "",
+        "example_de": ""
+    }
+}

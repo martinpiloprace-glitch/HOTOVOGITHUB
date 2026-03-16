@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-L-123",
+    "level": "A2",
+    "letter": "L",
+    "position": 123,
+    "data": {
+        "word": "Luck",
+        "translation": "Glück",
+        "example_en": "",
+        "example_de": ""
+    }
+}

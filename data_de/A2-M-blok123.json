@@ -1,0 +1,12 @@
+{
+    "id": "DE-A2-M-123",
+    "level": "A2",
+    "letter": "M",
+    "position": 123,
+    "data": {
+        "word": "Moon",
+        "translation": "Mond",
+        "example_en": "",
+        "example_de": ""
+    }
+}

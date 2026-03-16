@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-M-123",
+    "level": "B2",
+    "letter": "M",
+    "position": 123,
+    "data": {
+        "word": "Merit",
+        "translation": "Verdienst / Wert",
+        "example_en": "",
+        "example_de": ""
+    }
+}

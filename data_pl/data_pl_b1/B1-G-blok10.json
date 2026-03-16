@@ -1,0 +1,12 @@
+{
+    "id": "PL-B1-G-10",
+    "level": "B1",
+    "letter": "G",
+    "position": 10,
+    "data": {
+        "word": "Generate",
+        "translation": "Generować",
+        "example_en": "",
+        "example_de": ""
+    }
+}

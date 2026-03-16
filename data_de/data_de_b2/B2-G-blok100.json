@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-G-100",
+    "level": "B2",
+    "letter": "G",
+    "position": 100,
+    "data": {
+        "word": "Grid",
+        "translation": "Gitter / Netz",
+        "example_en": "",
+        "example_de": ""
+    }
+}

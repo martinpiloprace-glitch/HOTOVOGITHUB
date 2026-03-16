@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-D-123",
+    "level": "B1",
+    "letter": "D",
+    "position": 123,
+    "data": {
+        "word": "Developer",
+        "translation": "Entwickler",
+        "example_en": "",
+        "example_de": ""
+    }
+}

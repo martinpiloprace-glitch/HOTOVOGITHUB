@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-B-100",
+    "level": "A1",
+    "letter": "B",
+    "position": 100,
+    "data": {
+        "word": "Born",
+        "translation": "Geboren",
+        "example_en": "",
+        "example_de": ""
+    }
+}

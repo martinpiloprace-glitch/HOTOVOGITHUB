@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B1-R-123",
+    "level": "B1",
+    "letter": "R",
+    "position": 123,
+    "data": {
+        "word": "Reservation",
+        "translation": "Rezervace",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

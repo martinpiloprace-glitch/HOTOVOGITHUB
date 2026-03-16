@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B2-B-123",
+    "level": "B2",
+    "letter": "B",
+    "position": 123,
+    "data": {
+        "word": "Biology",
+        "translation": "Biologie",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

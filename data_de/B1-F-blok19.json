@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-F-19",
+    "level": "B1",
+    "letter": "F",
+    "position": 19,
+    "data": {
+        "word": "False",
+        "translation": "Falsch",
+        "example_en": "",
+        "example_de": ""
+    }
+}

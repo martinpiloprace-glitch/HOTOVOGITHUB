@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-M-100",
+    "level": "A1",
+    "letter": "M",
+    "position": 100,
+    "data": {
+        "word": "Model",
+        "translation": "Modell",
+        "example_en": "",
+        "example_de": ""
+    }
+}

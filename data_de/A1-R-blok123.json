@@ -1,0 +1,12 @@
+{
+    "id": "DE-A1-R-123",
+    "level": "A1",
+    "letter": "R",
+    "position": 123,
+    "data": {
+        "word": "Responsibility",
+        "translation": "Verantwortung",
+        "example_en": "",
+        "example_de": ""
+    }
+}

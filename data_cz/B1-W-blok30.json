@@ -1,0 +1,12 @@
+{
+    "id": "CZ-B1-W-30",
+    "level": "B1",
+    "letter": "W",
+    "position": 30,
+    "data": {
+        "word": "Weather",
+        "translation": "Počasí",
+        "example_en": "",
+        "example_cz": ""
+    }
+}

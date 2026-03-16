@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-F-123",
+    "level": "B2",
+    "letter": "F",
+    "position": 123,
+    "data": {
+        "word": "Forth",
+        "translation": "Vorwärts / Fort",
+        "example_en": "",
+        "example_de": ""
+    }
+}

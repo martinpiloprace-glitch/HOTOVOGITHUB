@@ -1,0 +1,12 @@
+{
+    "id": "PL-B1-P-123",
+    "level": "B1",
+    "letter": "P",
+    "position": 123,
+    "data": {
+        "word": "Process",
+        "translation": "Proces",
+        "example_en": "",
+        "example_de": ""
+    }
+}

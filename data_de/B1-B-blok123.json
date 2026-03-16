@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-B-123",
+    "level": "B1",
+    "letter": "B",
+    "position": 123,
+    "data": {
+        "word": "Black",
+        "translation": "Schwarz",
+        "example_en": "",
+        "example_de": ""
+    }
+}

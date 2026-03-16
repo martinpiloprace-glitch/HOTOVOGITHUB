@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-H-54",
+    "level": "B1",
+    "letter": "H",
+    "position": 54,
+    "data": {
+        "word": "Hello",
+        "translation": "Hallo",
+        "example_en": "",
+        "example_de": ""
+    }
+}

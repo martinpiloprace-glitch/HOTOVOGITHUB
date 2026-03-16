@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-S-400",
+    "level": "B2",
+    "letter": "S",
+    "position": 400,
+    "data": {
+        "word": "Store",
+        "translation": "Laden / Speichern",
+        "example_en": "",
+        "example_de": ""
+    }
+}

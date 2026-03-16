@@ -1,0 +1,12 @@
+{
+    "id": "DE-B2-S-123",
+    "level": "B2",
+    "letter": "S",
+    "position": 123,
+    "data": {
+        "word": "Shake",
+        "translation": "Schütteln",
+        "example_en": "",
+        "example_de": ""
+    }
+}

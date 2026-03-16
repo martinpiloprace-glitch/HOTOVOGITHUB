@@ -1,0 +1,12 @@
+{
+    "id": "DE-B1-H-123",
+    "level": "B1",
+    "letter": "H",
+    "position": 123,
+    "data": {
+        "word": "Hotel",
+        "translation": "Hotel",
+        "example_en": "",
+        "example_de": ""
+    }
+}
