@@ -1,0 +1,257 @@
+m<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEXICON GO</title>
+<style>
+  :root { 
+    --bg: #f4f7f6; --box: white; --txt: #000; --ram: #fff; --shd: rgba(0,0,0,0.1); 
+    --border: #333; --muted: #888; --accent: #28a745; --menu-bg: rgba(255,255,255,0.95); 
+  }
+  [data-theme="dark"] { 
+    --bg: #1a1a1a; --box: #2d2d2d; --txt: #fff; --ram: #3d3d3d; --shd: rgba(0,0,0,0.5); 
+    --border: #555; --muted: #aaa; --menu-bg: rgba(45,45,45,0.95); 
+  }
+  
+  body { 
+    font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; display: flex; 
+    justify-content: center; align-items: center; min-height: 100vh; 
+    background: var(--bg); color: var(--txt); overflow: hidden; 
+  }
+  
+  .box { 
+    background: var(--box); padding: 20px; border-radius: 25px; box-shadow: 0 15px 40px var(--shd); 
+    width: 90%; max-width: 420px; text-align: center; display: flex; flex-direction: column; position: relative;
+  }
+
+  .brand { font-size: 1.8rem; font-weight: 900; letter-spacing: -1px; margin-bottom: 10px; color: var(--accent); }
+  .brand span { color: var(--txt); }
+
+  .settings-container { position: absolute; top: 20px; right: 20px; z-index: 1000; }
+  .gear { cursor: pointer; font-size: 1.4rem; opacity: 0.5; transition: 0.3s; }
+  .gear:hover { opacity: 1; transform: rotate(45deg); }
+  
+  .settings-menu { 
+    position: absolute; top: 40px; right: 0; width: 160px; background: var(--menu-bg); 
+    backdrop-filter: blur(10px); border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    display: none; flex-direction: column; padding: 12px; border: 1px solid rgba(150,150,150,0.2); 
+  }
+  .settings-menu.open { display: flex; }
+  .menu-label { font-size: 0.7rem; font-weight: bold; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; text-align: left; margin-top: 10px; }
+  
+  .flags-row { display: flex; gap: 6px; justify-content: space-between; margin-bottom: 5px; }
+  .lang-opt { width: 42px; height: 28px; cursor: pointer; opacity: 0.4; border-radius: 6px; border: 2px solid transparent; object-fit: cover; }
+  .lang-opt.active { opacity: 1; border-color: var(--accent); }
+
+  .theme-row { display: flex; gap: 8px; margin-top: 5px; }
+  .theme-btn { flex: 1; padding: 10px; cursor: pointer; border-radius: 8px; border: 1px solid rgba(150,150,150,0.3); background: var(--ram); color: var(--txt); font-size: 1.1rem; }
+
+  .urovne-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 10px; }
+  .uroven-btn { padding: 10px 2px; border: none; border-radius: 8px; color: white; font-size: 0.9rem; font-weight: bold; cursor: pointer; opacity: 0.4; }
+  .uroven-btn.active { opacity: 1; transform: scale(1.05); }
+  .a-uroven { background: #28a745; } .b-uroven { background: #007bff; }
+  
+  .pismena-grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 4px; padding: 5px; background: rgba(0,0,0,0.03); border-radius: 10px; margin-bottom: 10px; }
+  .p-btn { aspect-ratio: 1; border-radius: 6px; border: 1px solid #ddd; background: var(--ram); color: var(--txt); font-size: 0.75rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .p-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+  
+  .ramecek { padding: 20px 10px; border: 3px solid var(--border); border-radius: 20px; background: var(--ram); min-height: 100px; display: flex; flex-direction: column; justify-content: center; cursor: pointer; }
+  .flash { animation: pulse 0.3s ease-out; }
+  @keyframes pulse { 0% { border-color: var(--border); } 50% { border-color: var(--accent); } 100% { border-color: var(--border); } }
+
+  .word-text { font-size: 2.3rem; font-weight: 800; line-height: 1; margin: 0; }
+  .trans-text { font-size: 1.6rem; opacity: 0.7; margin-top: 15px; border-top: 2px solid #eee; padding-top: 15px; transition: 0.2s; }
+  .hidden { opacity: 0; filter: blur(10px); pointer-events: none; }
+  
+  .progress-container { width: 100%; height: 8px; background: #eee; border-radius: 10px; margin: 15px 0; overflow: hidden; }
+  #progress-bar { width: 0%; height: 100%; background: var(--accent); transition: width 0.4s ease; }
+  
+  .nav-row { display: flex; gap: 12px; }
+  .nav-btn { flex: 1; padding: 18px; font-size: 1.4rem; color: white; border: none; border-radius: 15px; cursor: pointer; font-weight: bold; }
+  .btn-zpet { background: #dc3545; } .btn-dalsi { background: #28a745; }
+
+  /* ZVĚTŠENÝ MODÁL (cca o 2cm větší) */
+  .modal { 
+    display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+    width: 85%; max-width: 340px; background: var(--box); border-radius: 30px; z-index: 2000; 
+    padding: 35px; box-sizing: border-box; flex-direction: column; justify-content: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35); border: 2px solid var(--accent);
+  }
+  .modal.open { display: flex; }
+  .modal h3 { color: var(--accent); margin: 0 0 15px 0; font-size: 1.3rem; }
+  .modal p { font-size: 0.95rem; line-height: 1.6; color: var(--txt); margin: 0 0 20px 0; text-align: left; }
+  .close-modal { padding: 12px; background: var(--accent); color: white; border: none; border-radius: 12px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+
+  /* PATIČKA */
+  .footer-btn { margin-top: 15px; font-size: 0.75rem; color: var(--muted); cursor: pointer; border: none; background: none; transition: 0.2s; font-weight: 600; text-decoration: underline; }
+  .footer-btn:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <div id="oxfordModal" class="modal">
+    <h3>Metodika Oxford</h3>
+    <p>Sestaveno podle seznamu 3000 nejdůležitějších slov, která pokrývají 90 % běžné komunikace.</p>
+    <button class="close-modal" onclick="closeOxford()">Rozumím</button>
+  </div>
+
+  <div class="brand">LEXICON <span>GO</span></div>
+  
+  <div class="settings-container">
+    <div class="gear" onclick="toggleMenu(event)">⚙️</div>
+    <div id="setMenu" class="settings-menu">
+      <div class="menu-label">Vlak</div>
+      <div class="flags-row">
+        <img id="m-cz" class="lang-opt active" src="https://flagcdn.com/cz.svg" onclick="zmenJazyk('data_cz', 'm-cz')" alt="CZ">
+        <img id="m-de" class="lang-opt" src="https://flagcdn.com/de.svg" onclick="zmenJazyk('data_de', 'm-de')" alt="DE">
+        <img id="m-pl" class="lang-opt" src="https://flagcdn.com/pl.svg" onclick="zmenJazyk('data_pl', 'm-pl')" alt="PL">
+      </div>
+      <div class="menu-label">Vzhled</div>
+      <div class="theme-row">
+        <button class="theme-btn" onclick="document.documentElement.setAttribute('data-theme', 'light')">☀️</button>
+        <button class="theme-btn" onclick="document.documentElement.setAttribute('data-theme', 'dark')">🌙</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="urovne-grid">
+    <button id="btn-A1" class="uroven-btn a-uroven" onclick="nastavUroven('A1', '#28a745')">A1</button>
+    <button id="btn-A2" class="uroven-btn a-uroven" onclick="nastavUroven('A2', '#28a745')">A2</button>
+    <button id="btn-B1" class="uroven-btn b-uroven" onclick="nastavUroven('B1', '#007bff')">B1</button>
+    <button id="btn-B2" class="uroven-btn b-uroven" onclick="nastavUroven('B2', '#007bff')">B2</button>
+  </div>
+
+  <div id="pismena-grid" class="pismena-grid"></div>
+
+  <div class="vystup-sekce">
+    <div id="info" style="font-weight:bold; margin-bottom:8px; font-size: 0.8rem; color: var(--muted);">READY</div>
+    <div class="ramecek" id="display-box" onclick="togglePreklad()">
+        <div id="v-slovo" class="word-text" style="opacity: 0.3;">START</div>
+        <div id="v-preklad" class="trans-text" style="border:none;">🏁</div>
+    </div>
+    <div class="progress-container"><div id="progress-bar"></div></div>
+    <div class="nav-row">
+        <button class="nav-btn btn-zpet" onclick="posun(-1)">⬅</button>
+        <button class="nav-btn btn-dalsi" onclick="posun(1)">➡</button>
+    </div>
+  </div>
+
+  <button class="footer-btn" onclick="openOxford()">Sestaveno podle Oxford 3000™</button>
+</div>
+
+<script>
+const TEXTY = {
+    data_cz: { footer: "Sestaveno podle Oxford 3000™", modalTitle: "Metodika Oxford", modalText: "Tato aplikace je sestavena podle seznamu 3000 nejdůležitějších slov. Tato slova tvoří až 90 % běžné komunikace v reálném světě.", modalBtn: "Rozumím", start: "START", empty: "PRÁZDNO", noData: "Zatím bez dat" },
+    data_pl: { footer: "Opracowane według Oxford 3000™", modalTitle: "Metodyka Oxford", modalText: "Ta aplikacja została opracowana na podstawie listy 3000 najważniejszych słów. Słowa te stanowią do 90% codziennej komunikacji w świecie rzeczywistym.", modalBtn: "Rozumiem", start: "START", empty: "PUSTE", noData: "Brak danych" },
+    data_de: { footer: "Erstellt nach Oxford 3000™", modalTitle: "Oxford-Methodik", modalText: "Diese App wurde auf Grundlage der Liste der 3000 wichtigsten Wörter erstellt. Diese Wörter machen bis zu 90 % der alltäglichen Kommunikation in der realen Welt aus.", modalBtn: "Verstanden", start: "START", empty: "LEER", noData: "Noch keine Daten" }
+};
+
+let AKTUALNI_SLOZKA = "data_cz";
+const URL_GITHUB = "https://raw.githubusercontent.com/martinpiloprace-glitch/HOTOVOGITHUB/main/";
+let ur = "", pis = "", blk = 1, maxBlk = 0, prekladViditelny = true;
+
+function openOxford() { document.getElementById("oxfordModal").classList.add("open"); }
+function closeOxford() { document.getElementById("oxfordModal").classList.remove("open"); }
+function toggleMenu(e) { e.stopPropagation(); document.getElementById('setMenu').classList.toggle('open'); }
+window.onclick = function(e) { if (!e.target.closest('.settings-container')) document.getElementById('setMenu').classList.remove('open'); }
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === "ArrowRight") posun(1);
+    if (e.key === "ArrowLeft") posun(-1);
+    if (e.key === " ") { e.preventDefault(); togglePreklad(); }
+});
+
+function togglePreklad() { prekladViditelny = !prekladViditelny; aktualizujZobrazeniPrekladu(); }
+function aktualizujZobrazeniPrekladu() {
+    const el = document.getElementById("v-preklad");
+    if (prekladViditelny) el.classList.remove("hidden"); else el.classList.add("hidden");
+}
+
+function zmenJazyk(slozka, id) {
+    AKTUALNI_SLOZKA = slozka;
+    const t = TEXTY[slozka];
+    document.querySelector('.footer-btn').innerText = t.footer;
+    const modal = document.getElementById('oxfordModal');
+    modal.querySelector('h3').innerText = t.modalTitle;
+    modal.querySelector('p').innerText = t.modalText;
+    modal.querySelector('.close-modal').innerText = t.modalBtn;
+    
+    const vSlovo = document.getElementById("v-slovo");
+    if (vSlovo.style.opacity < 1) {
+        vSlovo.innerText = (vSlovo.innerText === "PRÁZDNO" || vSlovo.innerText === "PUSTE" || vSlovo.innerText === "LEER") ? t.empty : t.start;
+    }
+    document.querySelectorAll('.lang-opt').forEach(o => o.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    if (pis) hledej(ur, pis);
+}
+
+function nastavUroven(novaUr, color) {
+    ur = novaUr;
+    document.querySelectorAll('.uroven-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-' + novaUr).classList.add('active');
+    document.documentElement.style.setProperty('--accent', color);
+    if (pis) hledej(ur, pis);
+}
+
+function generujPismena() {
+    const grid = document.getElementById("pismena-grid");
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(p => {
+        const b = document.createElement("button");
+        b.className = "p-btn"; b.textContent = p; b.id = "p-" + p;
+        b.onclick = () => {
+            document.querySelectorAll('.p-btn').forEach(btn => btn.classList.remove('active'));
+            b.classList.add('active');
+            if (ur) hledej(ur, p);
+        };
+        grid.appendChild(b);
+    });
+}
+
+async function hledej(uP, pP) {
+    ur = uP; pis = pP; blk = 1; await nactiData();
+    let min = 1, max = 300, nalezeneMax = 1;
+    while (min <= max) {
+        let mid = Math.floor((min + max) / 2);
+        try {
+            const r = await fetch(`${URL_GITHUB}${AKTUALNI_SLOZKA}/${ur}-${pis}-blok${mid}.json`, { method: 'HEAD' });
+            if (r.ok) { nalezeneMax = mid; min = mid + 1; } else { max = mid - 1; }
+        } catch (e) { max = mid - 1; }
+    }
+    maxBlk = nalezeneMax; updateUI();
+}
+
+async function nactiData() {
+    const vSlovo = document.getElementById("v-slovo");
+    const vPreklad = document.getElementById("v-preklad");
+    const t = TEXTY[AKTUALNI_SLOZKA];
+    try {
+        const r = await fetch(`${URL_GITHUB}${AKTUALNI_SLOZKA}/${ur}-${pis}-blok${blk}.json`);
+        if (!r.ok) throw new Error();
+        const j = await r.json();
+        vSlovo.style.opacity = "1"; vPreklad.style.borderTop = "2px solid #eee";
+        const box = document.getElementById("display-box");
+        box.classList.remove("flash"); void box.offsetWidth; box.classList.add("flash");
+        vSlovo.innerText = j.data.word; vPreklad.innerText = j.data.translation;
+        aktualizujZobrazeniPrekladu(); updateUI();
+    } catch (e) {
+        vSlovo.innerText = t.empty; vSlovo.style.opacity = "0.2";
+        vPreklad.innerText = t.noData; vPreklad.style.border = "none";
+        updateUI();
+    }
+}
+
+function updateUI() {
+    document.getElementById("info").innerText = `${ur} | ${pis} | BLOK ${blk}/${maxBlk}`;
+    document.getElementById("progress-bar").style.width = (maxBlk > 0 ? (blk / maxBlk) * 100 : 0) + "%";
+}
+
+function posun(s) {
+    if (!pis || maxBlk === 0) return;
+    let n = blk + s; if (n >= 1 && n <= maxBlk) { blk = n; nactiData(); }
+}
+generujPismena();
+</script>
+</body>
+</html>
